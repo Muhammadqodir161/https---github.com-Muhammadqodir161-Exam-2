@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Questions List</title>
+</head>
+<body>
+    <h1>Questions List</h1>
+    <ul>
+        {% for question in questions %}
+            <li><strong>{{ question.name }}:</strong> {{ question.question }} ({{ question.email }})</li>
+        {% endfor %}
+    </ul>
+    <a href="/">Back</a>
+</body>
+</html>
